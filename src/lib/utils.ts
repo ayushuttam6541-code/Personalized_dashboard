@@ -76,7 +76,7 @@ export function getCategoryBadgeColor(category?: Category | string | null) {
     },
   };
   return (
-    map[category] || {
+    map[category as Category] || {
       bg: 'bg-zinc-500/10',
       text: 'text-zinc-600 dark:text-zinc-400',
       border: 'border-zinc-500/20',
